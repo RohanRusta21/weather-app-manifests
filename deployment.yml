@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: meme-app
-          image: wededo4644/weather-app:4870de67b84046a3ce57957244796a13d7584973
+          image: wededo4644/weather-app:bc7415ffbac0bb088b5bea5d4ee0663d3d6dc1b2
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
