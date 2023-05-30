@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: weather-app
-          image: wededo4644/weather-app:44b0c7dced7fa78e394f42f4d4a23c1c16eed23c
+          image: wededo4644/weather-app:f4f0e3fb93f19f757d50cb1e23225a7b134d43c5
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
