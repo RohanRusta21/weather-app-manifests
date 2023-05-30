@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meme-app
+  namespace: argocd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: meme-app
+  template:
+    metadata:
+      labels:
+        app: meme-app
+    spec:
+      containers:
+        - name: meme-app
+          image: wededo4644/weather-app
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
