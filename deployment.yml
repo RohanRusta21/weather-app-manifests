@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: meme-app
+  name: weather-app
   namespace: argocd
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: meme-app
+      app: weather-app
   template:
     metadata:
       labels:
-        app: meme-app
+        app: weather-app
     spec:
       containers:
-        - name: meme-app
+        - name: weather-app
           image: wededo4644/weather-app:bc7415ffbac0bb088b5bea5d4ee0663d3d6dc1b2
           imagePullPolicy: Always
           ports:
