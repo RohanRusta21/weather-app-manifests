@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: weather-app
-  namespace: argocd
+  namespace: test
 spec:
   replicas: 3
   selector:
