@@ -4,11 +4,12 @@ metadata:
   name: weather-app
   namespace: test
 spec:
-  type: LoadBalancer
+  #type: LoadBalancer
+  type: NodePort
   selector:
     app: weather-app
   ports:
     - port: 80
       protocol: TCP
       targetPort: 3000
-      #nodePort: 31001
+      nodePort: 31001
