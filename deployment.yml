@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: weather-app
-          image: wededo4644/weather-app:101
+          image: wededo4644/weather-app:102
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
